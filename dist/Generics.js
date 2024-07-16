@@ -32,6 +32,11 @@ const functionGeneric = (n, o) => {
     return { n, o };
 };
 const def = functionGeneric(12, '21');
+// <!----------------------------!> 
+const functttt = (n, o) => {
+    return { n, o };
+};
+const adsasasa = functttt(20, 29);
 const player = {
     name: "dhoni",
     age: 50
@@ -44,3 +49,24 @@ const functionGeneric1 = (n, o) => {
     return { n, o };
 };
 const efg = functionGeneric(player, player1);
+const users = [
+    {
+        name: 'aditi',
+        age: 23
+    },
+    {
+        name: 'akshat',
+        age: 24
+    },
+    {
+        name: 'Random',
+        age: 43
+    }
+];
+const filterByPeople = (arr, property, value) => {
+    return arr.filter((item) => item[property] === value);
+};
+const filterPeopleByName = filterByPeople(users, "name", 'akshat');
+const filterPeopleByAge = filterByPeople(users, "age", 23);
+console.log("🚀 ~ filterPeopleByAge:", filterPeopleByAge);
+console.log("🚀 ~ filterPeopleByName:", filterPeopleByName);
